@@ -42,6 +42,9 @@ mathjax: true
 social-share: true
 social-share-items: ['wechat', 'qzone', 'douban', 'twitter', 'weibo']
 
+# b2t 回到顶部 by Ray-Eldath
+b2t: true
+
 # theme color 主题皮肤
 theme-color: 'default'  # pink or default
 
