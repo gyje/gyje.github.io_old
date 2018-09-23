@@ -1,7 +1,8 @@
 ---
 layout: default
-home-title: H2O Theme For Jekyll
-description: 或许是最漂亮的Jekyll主题
+home-title: 向高博客
+description: 做出选择 承担代价
+header-img: https://upload-images.jianshu.io/upload_images/2348227-a0f0d33532f19f09.png
 ---
 
 {% include header.html %}
@@ -43,7 +44,7 @@ description: 或许是最漂亮的Jekyll主题
                             {% endfor %}
                         {% endif %}
                     </div>
-                    <time class="post-date" datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date_to_string }}</time>
+                    <time class="post-date" datetime="{{ post.date | date:'%Y-%m-%d_%T' }}">{{ post.date | date:'%Y-%m-%d_%T'}}</time>
                 </footer>
             </article>
         {% endfor %}

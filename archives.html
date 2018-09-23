@@ -17,11 +17,11 @@ layout: default
         {% unless post.next %}
           <h3 style="margin-bottom: 8px">{{ post.date | date: "%Y-%m-%d" }}</h3>
         {% else %}
-        {% capture year %}{{ post.date | date: "%Y-%m-%d_%T" }}{% endcapture %}
-        {% capture nyear %}{{ post.next.date | date: "%Y-%m-%d_%T" }}{% endcapture %}
+        {% capture year %}{{ post.date | date: "%Y-%m-%d" }}{% endcapture %}
+        {% capture nyear %}{{ post.next.date | date: "%Y-%m-%d" }}{% endcapture %}
         
         {% if year != nyear %}
-           <h3 style="margin-bottom: 8px">{{ post.date | date: "%Y-%m-%d_%T" }}</h3>
+           <h3 style="margin-bottom: 8px">{{ post.date | date: "%Y-%m-%d" }}</h3>
         {% endif %}
         {% endunless %}
        
